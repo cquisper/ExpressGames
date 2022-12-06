@@ -1,0 +1,3 @@
+#Carpetas o archivos a no subir a git
+.idea
+target

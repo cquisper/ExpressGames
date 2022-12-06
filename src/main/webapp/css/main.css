@@ -1,0 +1,294 @@
+/* box model */
+:root {
+    --fondo-oscuro: #808bba;
+    --blanco: #ffffff;
+    --azul: #1261EF;
+    --principal: "Akshar", sans-serif;
+    --fuenteSecundaria: "Anek Tamil", sans-serif;
+    --negro: #000000;
+    --gris: #a5a5a5;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+i{
+    font-style: normal;
+}
+button{
+    border: none;
+    outline: none;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+
+input{
+    border: none;
+    outline: none;
+}
+
+label {
+    font-size: 1.5rem;
+    font-family: var(--fuenteSecundaria);
+
+}
+.form-registro{
+    padding: 1rem;
+}
+
+
+.contenedor_login {
+    width: 65%;
+    background-color: rgba(43, 86, 108, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+
+
+}
+
+
+
+@media (max-width: 768px) {
+    .contenedor_login {
+        width: 100%;
+    }
+}
+.barra_login {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+
+@media (max-width: 768px) {
+    .barra_login {
+        flex-wrap: wrap;
+
+    }
+    .barra_login button {
+        margin-top: 2rem;
+    }
+}
+.barra_login button {
+    color: var(--blanco);
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    font-family: var(--principal);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    display: block;
+}
+.barra_login button:hover {
+    cursor: pointer;
+}
+
+.formularios{
+    display: none;
+}
+
+.mostrar-formulario{
+    display: block!important;
+}
+
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    width: 100%;
+
+
+}
+.campo_doble {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .campo_doble {
+        flex-wrap: wrap;
+    }
+}
+.campo_doble .campo{
+    margin-left: 1rem;
+}
+.campo input{
+    height: 3rem;
+    border-radius: 15px;
+    padding: 0.5rem;
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.campo input::placeholder{
+    font-family: var(--fuenteSecundaria);
+
+}
+.campo_radio_grupo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.campo_radio_grupo p{
+    margin: 0;
+}
+.campo label{
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+}
+.campo_check{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+.campo_check input{
+    margin-left: 0.5rem;
+
+}
+.campo_check p{
+    margin-left: 0.5rem;
+
+}
+
+
+.contenedor_fondo{
+    background-image: url("../assets/image/backgroud-login.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+
+
+.campos_tipocheck {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.campo-selecciones{
+    margin-bottom: 2rem;
+    color: var(--blanco);
+}
+
+@media (max-width: 768px) {
+    .campo-selecciones{
+        flex-direction: column;
+    }
+
+
+    .campos_tipocheck{
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .campo-selecciones p{
+        border: 1px solid #ffffff;
+        border-radius: 15px;
+        text-align: center;
+    }
+}
+
+
+
+.campo-selecciones .campos_tipocheck{
+    padding-left: 2rem;
+}
+.boton {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 3rem;
+    border-radius: 15px;
+    font-family: var(--principal);
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+.boton.boton-azul{
+    background-color: var( --azul);
+}
+
+p{
+    font-size: 1.5rem;
+    font-family: var(--fuenteSecundaria);
+
+}
+
+/*Ingresar*/
+
+.boton-login{
+    box-shadow: 6px 4px 0px rgb(255, 255, 255);
+}
+.boton-login:hover{
+    box-shadow: 3px 2px 0px rgb(255, 255, 255);
+}
+
+.contenedor_login{
+    padding-top: 2rem;
+    width: 100%;
+}
+
+
+
+.barra_login .seleccionado::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 15px;
+
+}
+
+.barra_login button:hover::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.login-title{
+    align-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: var(--principal);
+}
+
+.login-title a{
+    text-decoration: none;
+    color: var(--blanco);
+}
