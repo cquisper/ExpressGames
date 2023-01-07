@@ -1,2 +1,2 @@
 # ExpressGames
-Proyecto realizado por estudiantes de la UAP.
+Aplicativo web que simula un sistema de ventas real empleando Paypal como pasarela de pago.
